@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  background-color: #4481ee;
+}
+
+.navbar {
+  margin: auto;
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding-left: 9px;
+  padding-top: 5px;
+}
+.logo img{
+  width: 40px;
+  height: 50px;
+  margin: 0;
+
+}
+
+  .navbar a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.nabvar a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  background-image: url(./img/fondo.jpg);
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.textos-header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.57);
+  text-align: center;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.parrafo {
+  padding-top: 20px;
+  padding-top: 0px 20px;
+  font-size: 22px;
+}
+
+.nosotros {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.historia {
+  width: 100%;
+  padding: 20px;
+}
+.vision,
+.mision {
+  width: 50%;
+  padding: 20px;
+}
+h2,
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.servicios {
+    width: 100%;
+  text-align: center;
+  background-color: #44a1ee41;
+  padding-top: 50px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.servicios h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+.servicios h4 {
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 10px;
+
+
+}
+.items {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item{
+  margin: 20px;
+  width: 350px;
+box-shadow: 0px 0px 6px #333;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.item h4{
+  margin-bottom: 20px;
+}
+hr{
+  margin: 20px 0px;
+}
+.servicios img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+.galeria{
+    width: 100%;
+}
+.galeria h4{
+font-size: 40px;
+font-weight: 500;
+text-align: center;
+padding: 40px;
+margin-top: 50px;
+}
+.container-galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+.container-galeria img{
+width: 300px;
+height: 300px;
+object-fit: cover;
+margin: 20px;
+}
+.ubicacion{
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #44a1ee41;
+}
+.ubicacion h4{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container-ubicacion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.container-ubicacion img{
+width: 50%;
+}
+.container-ubicacion iframe{
+    width: 40%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #4481ee;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer i{
+margin-right: 20px;
+color: #fff;
+}
+
+@media screen and (max-width:750px){
+    h1 {
+        font-size: 35px;
+    }
+    .parrafo {
+        font-size: 14px;
+    }
+    .navbar a {
+        font-size: 13px;
+    }
+    .mision{
+        width: 100%;
+    }
+    .vision{
+        width: 100%;
+    }
+    .container-ubicacion{
+        justify-content: center;
+    }
+    .container-ubicacion img{
+        width: 70%;
+        }
+        .container-ubicacion iframe{
+            width: 90%;
+            height: 250px;
+
+        }
+}
